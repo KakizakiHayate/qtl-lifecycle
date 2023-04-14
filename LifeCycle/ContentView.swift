@@ -2,7 +2,6 @@ import SwiftUI
 import SimpleToast
 
 struct ContentView: View {
-//    @ObservedObject var toastModel = ToastModel()
     @State var showToast: Bool = false
     @State var textToast = ""
     var toastOptions = SimpleToastOptions(
@@ -48,7 +47,6 @@ struct ContentView: View {
         }
         .onAppear {
             print("NavigationStack")
-            a()
             
         }
         .onDisappear {

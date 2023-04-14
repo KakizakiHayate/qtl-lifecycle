@@ -38,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		75B19A3429E8F9B9007ED73D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				75C758A029CADD03005337FE /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		75C7588129CAC4F5005337FE = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +65,12 @@
 		75C7588C29CAC4F5005337FE /* LifeCycle */ = {
 			isa = PBXGroup;
 			children = (
+				75B19A3429E8F9B9007ED73D /* Model */,
 				75C7588D29CAC4F5005337FE /* LifeCycleApp.swift */,
 				75C7588F29CAC4F5005337FE /* ContentView.swift */,
 				75C7589B29CAC542005337FE /* SecondView.swift */,
 				75C7589129CAC4F8005337FE /* Assets.xcassets */,
 				75C7589329CAC4F8005337FE /* Preview Content */,
-				75C758A029CADD03005337FE /* Model.swift */,
 			);
 			path = LifeCycle;
 			sourceTree = "<group>";
