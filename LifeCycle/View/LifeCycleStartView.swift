@@ -1,7 +1,7 @@
 import SwiftUI
 import SimpleToast
 
-struct ContentView: View {
+struct LifeCycleStartView: View {
     // toastを表示/非表示
     @State private var showToast: Bool = false
     // toastに表示する文字を格納
@@ -19,8 +19,10 @@ struct ContentView: View {
                     .imageScale(.large)
                     .foregroundColor(.accentColor)
                     .padding()
-                NavigationLink(destination: SecondView(showToast: $showToast, textToast: $textToast)) {
-                        Text("画面遷移")
+                NavigationLink {
+                    LifeCycleFinishView(showToast: $showToast, textToast: $textToast) 
+                } label: {
+                    Text("画面遷移")
                 }
             }
             .onAppear {
@@ -58,9 +60,9 @@ struct ContentView: View {
 }// view
 
 // MARK: - ここからPreview
-struct ContentView_Previews: PreviewProvider {
+struct LifeCycleStartView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        LifeCycleStartView()
     }
 }
 // MARK: ここまでPreview -

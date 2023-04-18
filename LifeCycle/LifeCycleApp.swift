@@ -11,7 +11,7 @@ import SwiftUI
 struct LifeCycleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LifeCycleStartView()
         }
     }
 }
