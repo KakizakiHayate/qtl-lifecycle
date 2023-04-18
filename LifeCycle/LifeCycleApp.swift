@@ -11,12 +11,7 @@ import SwiftUI
 struct LifeCycleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView().onAppear {
-                print("App")
-            }
-            .onDisappear {
-                print("AppDisappear")
-            }
+            ContentView()
         }
     }
 }

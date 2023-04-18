@@ -7,23 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7596520B29EEE02700A38291 /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7596520A29EEE02700A38291 /* Const.swift */; };
 		75C7588E29CAC4F5005337FE /* LifeCycleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C7588D29CAC4F5005337FE /* LifeCycleApp.swift */; };
 		75C7589029CAC4F5005337FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C7588F29CAC4F5005337FE /* ContentView.swift */; };
 		75C7589229CAC4F8005337FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C7589129CAC4F8005337FE /* Assets.xcassets */; };
 		75C7589529CAC4F8005337FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75C7589429CAC4F8005337FE /* Preview Assets.xcassets */; };
 		75C7589C29CAC542005337FE /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C7589B29CAC542005337FE /* SecondView.swift */; };
 		75C7589F29CAC6BB005337FE /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 75C7589E29CAC6BB005337FE /* SimpleToast */; };
-		75C758A129CADD03005337FE /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C758A029CADD03005337FE /* Model.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7596520A29EEE02700A38291 /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		75C7588A29CAC4F5005337FE /* LifeCycle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeCycle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75C7588D29CAC4F5005337FE /* LifeCycleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleApp.swift; sourceTree = "<group>"; };
 		75C7588F29CAC4F5005337FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		75C7589129CAC4F8005337FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75C7589429CAC4F8005337FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75C7589B29CAC542005337FE /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
-		75C758A029CADD03005337FE /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,12 +38,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		75B19A3429E8F9B9007ED73D /* Model */ = {
+		7596520C29EEE23E00A38291 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				75C758A029CADD03005337FE /* Model.swift */,
+				7596520A29EEE02700A38291 /* Const.swift */,
 			);
-			path = Model;
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7596520D29EEE25900A38291 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				75C7588F29CAC4F5005337FE /* ContentView.swift */,
+				75C7589B29CAC542005337FE /* SecondView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		75C7588129CAC4F5005337FE = {
@@ -65,10 +74,9 @@
 		75C7588C29CAC4F5005337FE /* LifeCycle */ = {
 			isa = PBXGroup;
 			children = (
-				75B19A3429E8F9B9007ED73D /* Model */,
 				75C7588D29CAC4F5005337FE /* LifeCycleApp.swift */,
-				75C7588F29CAC4F5005337FE /* ContentView.swift */,
-				75C7589B29CAC542005337FE /* SecondView.swift */,
+				7596520D29EEE25900A38291 /* View */,
+				7596520C29EEE23E00A38291 /* ViewModel */,
 				75C7589129CAC4F8005337FE /* Assets.xcassets */,
 				75C7589329CAC4F8005337FE /* Preview Content */,
 			);
@@ -162,7 +170,7 @@
 				75C7589C29CAC542005337FE /* SecondView.swift in Sources */,
 				75C7589029CAC4F5005337FE /* ContentView.swift in Sources */,
 				75C7588E29CAC4F5005337FE /* LifeCycleApp.swift in Sources */,
-				75C758A129CADD03005337FE /* Model.swift in Sources */,
+				7596520B29EEE02700A38291 /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

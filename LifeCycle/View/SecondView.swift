@@ -11,23 +11,16 @@ struct SecondView: View {
     @Binding var showToast: Bool
     @Binding var textToast: String
     
-    var toastOptions = SimpleToastOptions(
-        alignment: .bottom,
-        hideAfter: 5
-    )
+    // toastを宣言
+    private let const = Const.init()
     
     
     var body: some View {
         VStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-        }.onAppear {
-            
-//            showToast = true
+            Text("画面遷移")
         }
-        .onDisappear {
-//            showToast.toggle()
-        }
-        .simpleToast(isPresented: $showToast, options: toastOptions) {
+        // toast表示
+        .simpleToast(isPresented: $showToast, options: const.toastOptions) {
             HStack {
                 Image(systemName: "exclamationmark.triangle")
                 Text(textToast)
@@ -40,9 +33,10 @@ struct SecondView: View {
         }
     }
 }
-
+// MARK: - ここからPreview
 struct SecondView_Previews: PreviewProvider {
     static var previews: some View {
         SecondView(showToast: .constant(false), textToast: .constant(""))
     }
 }
+// MARK: ここまでPreview -
